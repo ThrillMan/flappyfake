@@ -108,6 +108,10 @@ font = pygame.font.Font(None, 50)
 pygame.display.set_caption('FakeFlap')
 clock = pygame.time.Clock()
 
+background_music = pygame.mixer.Sound('music/song.wav')
+background_music.set_volume(0.7)
+background_music.play(loops=-1)
+
 # Player sprite
 player = pygame.sprite.GroupSingle()
 player.add(Player())
